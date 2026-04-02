@@ -3,169 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Corte Piedra</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-(function(){
-emailjs.init("YOUR_PUBLIC_KEY");
-})();
-</script>
+<title>Corte Piedra - Experiencia Gourmet</title>
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<div id="loader"><div class="spinner"></div></div>
+<!-- LOADING -->
+<div id="loading">
+<img src="logo.png" class="logo">
+<div class="spinner"></div>
+</div>
 
-<video autoplay muted loop id="bg-video">
-<source src="assets/video.mp4" type="video/mp4">
-</video>
+<!-- PAGINA PRINCIPAL -->
+<div id="main">
 
-<div class="content">
-<img src="assets/logo.png" class="logo">
-<h1>Bienvenido a Corte Piedra</h1>
+<header>
+<img src="logo.png" class="logo-main">
+<h1>CORTE PIEDRA</h1>
+<p>Experiencia Gourmet en Cada Bocado</p>
+</header>
 
 <div class="buttons">
-<button onclick="mostrarMenu()">Menú</button>
-<button onclick="mostrarCalificacion()">Calificar</button>
-</div>
 
-<div class="social">
-<a href="https://wa.me/593980687349" target="_blank">WhatsApp</a>
-<a href="https://www.instagram.com/cortepiedra.rest/?hl=en" target="_blank">Instagram</a>
-</div>
-</div>
+<button class="menu-btn">Ver Menú</button>
 
-<div id="menu" class="panel">
+<a href="https://wa.me/593980687349" target="_blank" class="social whatsapp">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</a>
 
-<h2>🔥 Menú Corte Piedra</h2>
-
-<div class="tabs">
-  <button onclick="mostrarCategoria('entradas')">Entradas</button>
-  <button onclick="mostrarCategoria('cortes')">Cortes</button>
-  <button onclick="mostrarCategoria('lomos')">Lomos</button>
-  <button onclick="mostrarCategoria('picadas')">Picadas</button>
-  <button onclick="mostrarCategoria('burgers')">Burgers</button>
-  <button onclick="mostrarCategoria('mariscos')">Mariscos</button>
-  <button onclick="mostrarCategoria('bebidas')">Bebidas</button>
-  <button onclick="mostrarCategoria('bar')">Bar</button>
-</div>
-
-<!-- ENTRADAS -->
-<div id="entradas" class="categoria">
-<h3>Entradas</h3>
-<div class="item">Morcilla criolla</div>
-<div class="item">Chorizo corte piedra</div>
-<div class="item">Longaniza criolla</div>
-<div class="item">Empanaditas de viento</div>
-<div class="item">Madurito con queso <span>$3.00</span></div>
-<div class="item">Tuétano con camarón <span>$8.00</span></div>
-<div class="item">Nachos con lomo <span>$9.00</span></div>
-<div class="item">Nachos con pollo <span>$9.00</span></div>
-</div>
-
-<!-- CORTES -->
-<div id="cortes" class="categoria">
-<h3>Cortes Premium</h3>
-<div class="item">Costilla ahumada <span>$18.00</span></div>
-<div class="item">Baby ribs <span>$16.00</span></div>
-<div class="item">Bondiola <span>$16.00</span></div>
-<div class="item">Cowboy <span>$16.00</span></div>
-<div class="item">Matambre <span>$16.00</span></div>
-<div class="item">Matambre pizza <span>$18.00</span></div>
-<div class="item">Chistorra pizza <span>$16.00</span></div>
-<div class="item">New York <span>$20.00</span></div>
-<div class="item">Colita de cuadril <span>$17.00</span></div>
-<div class="item">Biffe chorizo <span>$18.00</span></div>
-<div class="item">Porterhouse <span>$18.00</span></div>
-<div class="item">Picaña <span>$20.00</span></div>
-<div class="item">Rib-eye <span>$18.00</span></div>
-<div class="item">Tomahawk <span>$20.00</span></div>
-</div>
-
-<!-- LOMOS -->
-<div id="lomos" class="categoria">
-<h3>Lomo Fino</h3>
-<div class="item">Lomo vino tinto <span>$15.00</span></div>
-<div class="item">Lomo tocino <span>$15.00</span></div>
-<div class="item">Lomo camarón <span>$16.00</span></div>
-<div class="item">Filet mignon <span>$15.00</span></div>
-<div class="item">Lomo chimichurri <span>$13.50</span></div>
-</div>
-
-<!-- PICADAS -->
-<div id="picadas" class="categoria">
-<h3>Picadas</h3>
-<div class="item">Picada Corte Piedra <span>$16.00</span></div>
-<div class="item">Picada Mixta <span>$24.00</span></div>
-</div>
-
-<!-- BURGERS -->
-<div id="burgers" class="categoria">
-<h3>Hamburguesas</h3>
-<div class="item">Hamburguesa americana <span>$6.00</span></div>
-<div class="item">Hamburguesa Corte Piedra <span>$9.00</span></div>
-</div>
-
-<!-- MARISCOS -->
-<div id="mariscos" class="categoria">
-<h3>Mariscos</h3>
-<div class="item">Ceviche peruano <span>$7.50</span></div>
-<div class="item">Ceviche camarón <span>$8.50</span></div>
-<div class="item">Ceviche mixto <span>$10.00</span></div>
-<div class="item">Chicharrón mixto <span>$12.00</span></div>
-<div class="item">Arroz con camarón <span>$9.00</span></div>
-<div class="item">Arroz marinero <span>$12.00</span></div>
-<div class="item">Corvina camarón <span>$13.50</span></div>
-<div class="item">Salmón naranja <span>$15.00</span></div>
-<div class="item">Carrusel mariscos <span>$24.00</span></div>
-</div>
-
-<!-- BEBIDAS -->
-<div id="bebidas" class="categoria">
-<h3>Bebidas</h3>
-<div class="item">Jugos <span>$1.50 - $2.50</span></div>
-<div class="item">Limonadas <span>$1.50 - $2.50</span></div>
-<div class="item">Gaseosas <span>$1.00</span></div>
-<div class="item">Milkshakes <span>$4.50</span></div>
-</div>
-
-<!-- BAR -->
-<div id="bar" class="categoria">
-<h3>Bar & Cócteles</h3>
-<div class="item">Mojito <span>$4.50 - $6.00</span></div>
-<div class="item">Margarita <span>$5.00</span></div>
-<div class="item">Piña colada <span>$5.00</span></div>
-<div class="item">Micheladas <span>$2.00 - $2.50</span></div>
-<div class="item">Cervezas <span>$2.00 - $3.50</span></div>
-<div class="item">Vinos <span>$4.00+</span></div>
-<div class="item">Whisky <span>$30.00+</span></div>
-</div>
-
-<button onclick="cerrar()">Cerrar</button>
+<a href="https://www.instagram.com/cortepiedra.rest/?hl=en" target="_blank" class="social insta">
+<i class="fab fa-instagram"></i> Instagram
+</a>
 
 </div>
 
-<div id="calificacion" class="panel">
+<section class="reviews">
+
 <h2>Califica tu experiencia</h2>
 
-<input type="text" id="nombre" placeholder="Tu nombre (opcional)">
+<input type="text" placeholder="Tu nombre (opcional)">
 
-<p>Comida</p>
-<div class="stars" data-type="comida"></div>
+<label>Atención</label>
+<div class="stars">
+★★★★★
+</div>
 
-<p>Atención</p>
-<div class="stars" data-type="atencion"></div>
+<label>Comida</label>
+<div class="stars">
+★★★★★
+</div>
 
-<p>Ambiente</p>
-<div class="stars" data-type="ambiente"></div>
+<label>Ambiente</label>
+<div class="stars">
+★★★★★
+</div>
 
-<textarea id="comentario" placeholder="Escribe tu experiencia..."></textarea>
+<textarea placeholder="Cuéntanos tu experiencia"></textarea>
 
-<button onclick="enviar()">Enviar</button>
-<button onclick="cerrar()">Cerrar</button>
+<button class="send">Enviar Calificación</button>
+
+</section>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
