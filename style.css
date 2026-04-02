@@ -1,0 +1,256 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#0f0f0f;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+
+height:90vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url("https://images.unsplash.com/photo-1558030006-450675393462");
+
+background-size:cover;
+background-position:center;
+
+}
+
+/* NAV */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 8%;
+
+}
+
+nav h2{
+
+font-family:Playfair Display;
+font-size:28px;
+color:#d4af37;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:30px;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+font-size:15px;
+
+}
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+/* HERO TEXT */
+
+.hero-text{
+
+text-align:center;
+margin-top:120px;
+padding:0 20px;
+
+}
+
+.hero-text h1{
+
+font-family:Playfair Display;
+font-size:60px;
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+max-width:650px;
+margin:auto;
+line-height:1.7;
+opacity:0.9;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+margin-top:30px;
+padding:14px 40px;
+
+background:#d4af37;
+color:black;
+
+text-decoration:none;
+font-weight:bold;
+
+border-radius:30px;
+
+}
+
+/* MENU */
+
+.menu{
+
+padding:90px 8%;
+
+}
+
+.menu h2{
+
+font-family:Playfair Display;
+font-size:40px;
+margin-bottom:40px;
+color:#d4af37;
+
+}
+
+/* GRID */
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+
+}
+
+/* CARD */
+
+.card{
+
+background:#1a1a1a;
+padding:25px;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+background:#222;
+
+}
+
+.card h3{
+
+font-size:18px;
+margin-bottom:6px;
+
+}
+
+.card p{
+
+font-size:14px;
+opacity:0.7;
+
+}
+
+.card span{
+
+display:block;
+margin-top:10px;
+color:#d4af37;
+font-weight:bold;
+
+}
+
+/* DARK SECTION */
+
+.dark{
+
+background:#070707;
+
+}
+
+/* NOTE */
+
+.nota{
+
+margin-top:30px;
+opacity:0.7;
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:60px;
+background:black;
+
+}
+
+footer h2{
+
+color:#d4af37;
+margin-bottom:10px;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+right:25px;
+
+background:#25D366;
+
+padding:15px 20px;
+
+border-radius:50px;
+
+text-decoration:none;
+color:white;
+font-weight:bold;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+.menu h2{
+font-size:32px;
+}
+
+}
