@@ -10,41 +10,42 @@ color:white;
 header{
 
 text-align:center;
-padding:40px;
+padding:30px;
 
 }
 
 .logo{
 
-width:120px;
+width:110px;
 
 }
 
-.menu-nav{
+.categories{
 
 display:flex;
-flex-wrap:wrap;
-justify-content:center;
+overflow-x:auto;
 gap:10px;
-padding:20px;
+padding:15px;
+background:#111;
 
 }
 
-.menu-nav a{
+.categories button{
 
 background:#c89b3c;
+border:none;
 padding:10px 15px;
-border-radius:6px;
-text-decoration:none;
 color:white;
+border-radius:6px;
+cursor:pointer;
 
 }
 
 .menu-section{
 
+padding:30px;
 max-width:900px;
 margin:auto;
-padding:40px 20px;
 
 }
 
@@ -55,26 +56,26 @@ padding-bottom:10px;
 
 }
 
-ul{
-
-list-style:none;
-padding:0;
-
-}
-
-li{
+.menu-item{
 
 display:flex;
 justify-content:space-between;
-padding:12px 0;
+padding:15px 0;
 border-bottom:1px solid #333;
 
 }
 
-.guarnicion{
+.menu-item h3{
 
-font-size:14px;
+margin:0;
+font-size:16px;
+
+}
+
+.note{
+
 color:#bbb;
+font-size:14px;
 margin-top:15px;
 
 }
@@ -82,7 +83,7 @@ margin-top:15px;
 footer{
 
 text-align:center;
-padding:40px;
+padding:30px;
 background:black;
 
 }
@@ -101,8 +102,6 @@ width:60px;
 
 }
 
-/* LOADER */
-
 #loader{
 
 position:fixed;
@@ -111,15 +110,8 @@ height:100%;
 background:black;
 display:flex;
 flex-direction:column;
-justify-content:center;
 align-items:center;
-
-}
-
-.loader-logo{
-
-width:150px;
-margin-bottom:20px;
+justify-content:center;
 
 }
 
