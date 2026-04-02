@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Corte Piedra | Parrilla & Restaurante</title>
+<title>Corte Piedra | Menú</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,18 +16,10 @@
 
 <body>
 
-<!-- LOADER -->
-
 <div id="loader">
-
 <img src="img/logo.png" class="loader-logo">
-
 <div class="spinner"></div>
-
 </div>
-
-
-<div id="content">
 
 <header>
 
@@ -40,34 +32,21 @@
 </header>
 
 
-<section class="intro">
+<!-- MENU CATEGORIAS -->
 
-<p>
-En Corte Piedra cada experiencia nace alrededor de una buena mesa.
-Desde junio de 2024 hemos trabajado con pasión para ofrecer cortes
-premium de res y cerdo, celebrando el verdadero sabor de la parrilla.
-</p>
+<div class="categories">
 
-</section>
+<button onclick="scrollToSection('entradas')">Entradas</button>
+<button onclick="scrollToSection('compartir')">Compartir</button>
+<button onclick="scrollToSection('cerdo')">Cerdo</button>
+<button onclick="scrollToSection('res')">Res</button>
+<button onclick="scrollToSection('lomo')">Lomo</button>
+<button onclick="scrollToSection('grill')">Grill</button>
+<button onclick="scrollToSection('picaditas')">Picaditas</button>
+<button onclick="scrollToSection('mariscos')">Mariscos</button>
+<button onclick="scrollToSection('bebidas')">Bebidas</button>
 
-
-<nav class="menu-nav">
-
-<a href="#entradas">Entradas</a>
-<a href="#compartir">Para Compartir</a>
-<a href="#cerdo">Cortes de Cerdo</a>
-<a href="#res">Cortes de Res</a>
-<a href="#lomo">Lomo Fino</a>
-<a href="#grill">Grill</a>
-<a href="#picaditas">Picaditas</a>
-<a href="#alitas">Alitas</a>
-<a href="#hamburguesas">Hamburguesas</a>
-<a href="#pizza">Pizza</a>
-<a href="#mariscos">Mariscos</a>
-<a href="#bebidas">Bebidas</a>
-<a href="#bar">Bar</a>
-
-</nav>
+</div>
 
 
 <!-- ENTRADAS -->
@@ -76,32 +55,45 @@ premium de res y cerdo, celebrando el verdadero sabor de la parrilla.
 
 <h2>Entradas</h2>
 
-<ul>
+<div class="menu-item">
 
-<li>Morcilla criolla a la parrilla <span>$3.50</span></li>
-<li>Chorizo Corte Piedra <span>$3.50</span></li>
-<li>Longaniza criolla a la parrilla <span>$5.00</span></li>
-<li>Empanaditas de viento <span>$3.00</span></li>
-<li>Madurito asado con queso y salprieta <span>$3.00</span></li>
+<div>
+<h3>Morcilla criolla a la parrilla</h3>
+</div>
 
-</ul>
+<span>$3.50</span>
 
-</section>
+</div>
 
+<div class="menu-item">
 
-<!-- ENTRADAS PARA COMPARTIR -->
+<div>
+<h3>Chorizo Corte Piedra</h3>
+</div>
 
-<section id="compartir" class="menu-section">
+<span>$3.50</span>
 
-<h2>Entradas para compartir</h2>
+</div>
 
-<ul>
+<div class="menu-item">
 
-<li>Tuétano con camarón y pan de ajo <span>$8.00</span></li>
-<li>Nachos con lomo fino de res <span>$9.00</span></li>
-<li>Nachos con pollo <span>$9.00</span></li>
+<div>
+<h3>Longaniza criolla</h3>
+</div>
 
-</ul>
+<span>$5.00</span>
+
+</div>
+
+<div class="menu-item">
+
+<div>
+<h3>Empanaditas de viento</h3>
+</div>
+
+<span>$3.00</span>
+
+</div>
 
 </section>
 
@@ -112,17 +104,26 @@ premium de res y cerdo, celebrando el verdadero sabor de la parrilla.
 
 <h2>Cortes de Cerdo</h2>
 
-<ul>
+<div class="menu-item">
+<h3>Costilla ahumada</h3>
+<span>$18</span>
+</div>
 
-<li>Costilla ahumada <span>$18.00</span></li>
-<li>Baby ribs <span>$16.00</span></li>
-<li>Bondiola <span>$16.00</span></li>
+<div class="menu-item">
+<h3>Baby ribs</h3>
+<span>$16</span>
+</div>
 
-</ul>
+<div class="menu-item">
+<h3>Bondiola</h3>
+<span>$16</span>
+</div>
 
-<p class="guarnicion">
-Incluye 2 guarniciones a elección:
+<p class="note">
+
+Incluye 2 guarniciones:  
 Papas • Patacones • Papa chaucha • Choclo con salsa de queso
+
 </p>
 
 </section>
@@ -134,195 +135,21 @@ Papas • Patacones • Papa chaucha • Choclo con salsa de queso
 
 <h2>Cortes de Res</h2>
 
-<ul>
+<div class="menu-item"><h3>Cowboy</h3><span>$16</span></div>
+<div class="menu-item"><h3>Matambre</h3><span>$16</span></div>
+<div class="menu-item"><h3>Matambre pizza</h3><span>$18</span></div>
+<div class="menu-item"><h3>Chistorra pizza</h3><span>$16</span></div>
+<div class="menu-item"><h3>New York</h3><span>$20</span></div>
+<div class="menu-item"><h3>Bife chorizo</h3><span>$18</span></div>
+<div class="menu-item"><h3>Rib Eye</h3><span>$20</span></div>
+<div class="menu-item"><h3>Tomahawk</h3><span>$20</span></div>
 
-<li>Cowboy <span>$16.00</span></li>
-<li>Matambre <span>$16.00</span></li>
-<li>Matambre pizza <span>$18.00</span></li>
-<li>Chistorra pizza <span>$16.00</span></li>
-<li>New York <span>$20.00</span></li>
-<li>Colita de cuadril <span>$17.00</span></li>
-<li>Bife chorizo <span>$18.00</span></li>
-<li>Porter House <span>$20.00</span></li>
-<li>Picaña <span>$18.00</span></li>
-<li>Rib Eye <span>$20.00</span></li>
-<li>Tomahawk <span>$20.00</span></li>
-
-</ul>
-
-<p class="guarnicion">
+<p class="note">
 
 Incluyen:  
 Ensalada fresca • Vegetales salteados • Salsas
 
 </p>
-
-</section>
-
-
-<!-- LOMO FINO -->
-
-<section id="lomo" class="menu-section">
-
-<h2>Lomo fino de res</h2>
-
-<ul>
-
-<li>Lomo en salsa de vino tinto <span>$15.00</span></li>
-<li>Lomo en salsa de tocino <span>$15.00</span></li>
-<li>Lomo en salsa de camarón <span>$16.00</span></li>
-<li>Filet mignon salsa champiñones <span>$15.00</span></li>
-<li>Lomo en salsa chimichurri <span>$13.50</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- GRILL -->
-
-<section id="grill" class="menu-section">
-
-<h2>Grill</h2>
-
-<ul>
-
-<li>Pollo a la parrilla <span>$7.50</span></li>
-<li>Panceta <span>$7.50</span></li>
-<li>Chuleta <span>$8.00</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- PICADITAS -->
-
-<section id="picaditas" class="menu-section">
-
-<h2>Picaditas</h2>
-
-<ul>
-
-<li>Picadita Corte Piedra <span>$16.00</span></li>
-<li>Picadita Corte Piedra Mixta <span>$24.00</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- ALITAS -->
-
-<section id="alitas" class="menu-section">
-
-<h2>Alitas & Pop Corn</h2>
-
-<ul>
-
-<li>6 alitas <span>$6.00</span></li>
-<li>12 alitas <span>$11.00</span></li>
-<li>18 alitas <span>$16.00</span></li>
-<li>24 alitas <span>$20.00</span></li>
-<li>Pop corn de pollo <span>$6.00</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- HAMBURGUESAS -->
-
-<section id="hamburguesas" class="menu-section">
-
-<h2>Hamburguesas</h2>
-
-<ul>
-
-<li>Hamburguesa americana <span>$6.00</span></li>
-<li>Hamburguesa Corte Piedra <span>$9.00</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- PIZZA -->
-
-<section id="pizza" class="menu-section">
-
-<h2>Pizza artesanal</h2>
-
-<ul>
-
-<li>Pizza de embutidos <span>$8.00</span></li>
-<li>Pizza bolognesa <span>$10.00</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- MARISCOS -->
-
-<section id="mariscos" class="menu-section">
-
-<h2>Mariscos</h2>
-
-<ul>
-
-<li>Ceviche peruano <span>$7.50</span></li>
-<li>Ceviche de camarón <span>$8.50</span></li>
-<li>Ceviche mixto <span>$10.00</span></li>
-<li>Chicharrón de camarón <span>$10.00</span></li>
-<li>Chicharrón de pescado <span>$8.00</span></li>
-<li>Arroz con camarón <span>$9.00</span></li>
-<li>Arroz marinero <span>$12.00</span></li>
-<li>Corvina salsa de camarón <span>$13.50</span></li>
-<li>Salmón salsa de naranja <span>$15.00</span></li>
-<li>Carrusel de mariscos <span>$24.00</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- BEBIDAS -->
-
-<section id="bebidas" class="menu-section">
-
-<h2>Bebidas</h2>
-
-<ul>
-
-<li>Café filtrado <span>$1.00</span></li>
-<li>Chocolate natural <span>$2.00</span></li>
-<li>Chocolate suizo <span>$3.00</span></li>
-<li>Jugos naturales <span>$1.50</span></li>
-<li>Limonadas <span>$1.50</span></li>
-<li>Milkshake <span>$4.50</span></li>
-
-</ul>
-
-</section>
-
-
-<!-- BAR -->
-
-<section id="bar" class="menu-section">
-
-<h2>Bar & Cócteles</h2>
-
-<ul>
-
-<li>Mojito clásico <span>$4.50</span></li>
-<li>Mojito maracuyá <span>$5.00</span></li>
-<li>Margarita <span>$5.00</span></li>
-<li>Tequila Sunrise <span>$5.00</span></li>
-<li>Piña colada <span>$5.00</span></li>
-<li>Mai Tai <span>$6.00</span></li>
-
-</ul>
 
 </section>
 
@@ -333,11 +160,11 @@ Ensalada fresca • Vegetales salteados • Salsas
 
 </footer>
 
-</div>
-
 
 <a class="whatsapp" href="https://wa.me/593980687349" target="_blank">
+
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
 </a>
 
 <script src="script.js"></script>
