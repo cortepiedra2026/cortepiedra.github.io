@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corte Piedra</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+emailjs.init("YOUR_PUBLIC_KEY");
+})();
+</script>
+</head>
+
+<body>
+
+<div id="loader"><div class="spinner"></div></div>
+
+<video autoplay muted loop id="bg-video">
+<source src="assets/video.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+<img src="assets/logo.png" class="logo">
+<h1>Bienvenido a Corte Piedra</h1>
+
+<div class="buttons">
+<button onclick="mostrarMenu()">Menú</button>
+<button onclick="mostrarCalificacion()">Calificar</button>
+</div>
+
+<div class="social">
+<a href="https://wa.me/593980687349" target="_blank">WhatsApp</a>
+<a href="https://www.instagram.com/cortepiedra.rest/?hl=en" target="_blank">Instagram</a>
+</div>
+</div>
+
+<div id="menu" class="panel">
+<h2>Menú Corte Piedra</h2>
+<p>Cortes premium, mariscos, hamburguesas, cócteles y más 🔥</p>
+<button onclick="cerrar()">Cerrar</button>
+</div>
+
+<div id="calificacion" class="panel">
+<h2>Califica tu experiencia</h2>
+
+<input type="text" id="nombre" placeholder="Tu nombre (opcional)">
+
+<p>Comida</p>
+<div class="stars" data-type="comida"></div>
+
+<p>Atención</p>
+<div class="stars" data-type="atencion"></div>
+
+<p>Ambiente</p>
+<div class="stars" data-type="ambiente"></div>
+
+<textarea id="comentario" placeholder="Escribe tu experiencia..."></textarea>
+
+<button onclick="enviar()">Enviar</button>
+<button onclick="cerrar()">Cerrar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
